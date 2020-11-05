@@ -5,6 +5,10 @@ const path = require('path')
 
 //modifica la chiamata alla funzione get di Express
 app.get('/', function (req, res) {
+  res.sendFile(path.join(__dirname,'home.html'));  // ritorna la cartella del progetto(__dirname)
+});
+
+app.get('/index', function (req, res) {
   res.sendFile(path.join(__dirname,'index.html'));  // ritorna la cartella del progetto(__dirname)
 });
 
