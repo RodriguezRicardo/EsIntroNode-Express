@@ -1,0 +1,12 @@
+<button type="button" (click)="visualLista()">clicca per la lista</button>
+<div *ngFor="let l of listaData">
+{{_id}}
+  <h3>{{l.supplier}}</h3>
+  <b>{{l.product_name}}</b>
+  <div>
+    {{l.quantity}}
+    {{l.unit_cost}}
+  </div>
+  <hr>
+</div>
+
